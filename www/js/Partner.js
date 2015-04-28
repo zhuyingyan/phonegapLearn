@@ -271,8 +271,8 @@ var cityPoint = {
 
 // 用于 partners 地图
 var partnerBd = {
-	jsonUrl:"http://120.24.85.210/api/getPartners.php?callback=?",
-	//jsonUrl:"api/getPartners.php",
+	//jsonUrl:"http://120.24.85.210/api/getPartners.php?callback=?",
+	jsonUrl:"api/getPartners.php",
 	data:[],
 	country:"china",                                  //设定我所在的国家
 	defaultIconObj:{url:'imgs/m0.png',w:30,h:24},     //设定默认商家的icon
@@ -332,10 +332,10 @@ var partnerBd = {
 		}else{
 			$.ajax({
 				url : url,
-				dataType : 'jsonp',
+				//dataType : 'jsonp',
 				timeout : 20000,
 				success : function(data){
-                    //data = JSON.parse(data);
+                    data = JSON.parse(data);
 					_self.data = data.data;
 					console.log(data);
 					_self.openMap(data.data);
@@ -468,6 +468,7 @@ var partnerBd = {
 		setTimeout(function(){
 		    J.Scroll($('#'+sectionID+'_article'));    
 		    J.hideMask();
+			$('#mySite').trigger("click");
 		},2300);
 	},
 	//  将层级图标标注在地图上,并把商户信息插入到页面
@@ -503,23 +504,25 @@ var partnerBd = {
 		},2300);
 	},
 	routePolicy:function(map,start,end,isbus){
-		var symmetry,syX,syY;
+		var symmetry,syX,syY,routePoiFun;
         if(isbus===1){
-            var transit = new BMap.TransitRoute(map, {
+			routePoiFun = new BMap.TransitRoute(map, {
                 renderOptions: {map: map,autoViewport: false}
             });
-            transit.search(start,end);
+			routePoiFun.search(start,end);
+
 
         } else if(isbus===0){
-            var transit = new BMap.WalkingRoute(map, {
+			routePoiFun = new BMap.WalkingRoute(map, {
                 renderOptions: {map: map,autoViewport: false}
             });
-            transit.search(start,end);
+			routePoiFun.search(start,end);
         } else{
-            var driving = new BMap.DrivingRoute(map, {
+			routePoiFun = new BMap.DrivingRoute(map, {
                 renderOptions:{map: map,autoViewport: false}
             });
-            driving.search(start,end);
+			routePoiFun.search(start,end);
+
         }
 		syX = 2*end.lat - start.lat;
 		syY = 2*end.lng - start.lng;
@@ -527,6 +530,7 @@ var partnerBd = {
 
 		map.setViewport([start,end,symmetry],{viewportOptions:{margins:[10,10,10,10]}});
 
+		return routePoiFun;
     },
 	// 找到最近的商户
 	nearestPart:function(map,callback){
@@ -609,8 +613,12 @@ var partnerBd = {
 			cityName = _self.siteCity;
 			urlArr.push( "http://apis.map.qq.com/uri/v1/routeplan?type=bus&from=我的位置&fromcoord="+origin+"&to="+desPartner.name+"&tocoord="+destination+"&policy=1&referer=DAVIDWINE");							
 			urlArr.push( "baidumap://map/direction?origin="+origin+"&destination="+destination+"&mode=driving&src=");	
-			urlArr.push( "http://maps.apple.com/?daddr="+origin+"&saddr="+destination);										
-			content =contentHTML(desPartner.name,"距离："+desPartner.distance+"km","#");											
+			urlArr.push( "http://maps.apple.com/?daddr="+origin+"&saddr="+destination);
+			if(desPartner.distance>1000){
+				content =contentHTML(desPartner.name,"距离："+(desPartner.distance/1000).toFixed(1)+"km","#");
+			}else{
+				content =contentHTML(desPartner.name,"距离："+desPartner.distance+"m","#");
+			}
 			myCompOverlay.setContent(content);
 			myCompOverlay.addEventListener("click",function(event){
 				
@@ -632,8 +640,12 @@ var partnerBd = {
 						cityName = addComp.city;
 						urlArr.push( "http://apis.map.qq.com/uri/v1/routeplan?type=bus&from=我的位置&fromcoord="+origin+"&to="+desPartner.name+"&tocoord="+destination+"&policy=1&referer=DAVIDWINE");							
 						urlArr.push( "baidumap://map/direction?origin="+origin+"&destination="+destination+"&mode=driving&src=");	
-						urlArr.push( "http://maps.apple.com/?daddr="+origin+"&saddr="+destination);countPartArrDis(_self.mainMap,point,_self.partnerArr);							
-						content =contentHTML(desPartner.name,"距离："+desPartner.distance+"km","#");
+						urlArr.push( "http://maps.apple.com/?daddr="+origin+"&saddr="+destination);countPartArrDis(_self.mainMap,point,_self.partnerArr);
+						if(desPartner.distance>1000){
+							content =contentHTML(desPartner.name,"距离："+(desPartner.distance/1000).toFixed(1)+"km","#");
+						}else{
+							content =contentHTML(desPartner.name,"距离："+desPartner.distance+"m","#");
+						}
 						myCompOverlay.setContent(content);
 						myCompOverlay.addEventListener("click",function(event){
 								//J.Router.goTo("#index_section",function(){});

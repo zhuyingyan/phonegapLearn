@@ -34,6 +34,9 @@ var Product = {
 };
 
 
+
+
+
 // 用于 news 数据
 var News ={
     data:[],
@@ -287,6 +290,7 @@ App.page('partner',function(){
             num =parseInt($($(item).find('.rank')).text()) - 1;
             partnerBd._current = num;          
         });
+
 		$('.search_lis').on("touchstart",function(event){
 			var num,item,_self= partnerBd;
             item = $(event.target).parents('.search_item');
@@ -433,7 +437,7 @@ App.page('partner_detail',function(){
 		var current =current||partnerBd._current;		
 		var local = local||partnerBd._resultLocal;
 		var map = map|| new BMap.Map("partmap");
-		var icon,_self = partnerBd,point,origin = partnerBd.mySitePoint,isbus = isbus||0,mark;
+		var icon,_self = partnerBd,point,origin = partnerBd.mySitePoint,isbus = isbus||0,mark,routePoiFun;
 		point = new BMap.Point(local[current].lng,local[current].lat);
 		if(origin.lng&&origin.lat){
 			map.centerAndZoom(origin, 12);
@@ -444,14 +448,33 @@ App.page('partner_detail',function(){
 				else if(local[current].distance>1000){
 					isbus = 1;
 				}
-			}           		
-            _self.routePolicy(map,origin,point,isbus);
-			if(current<11){
-				mark = addMarker(_self.levelBIconObj[current],point,map);
-			}else{
-				mark = addMarker(_self.defaultBIconObj,point,map);
 			}
-			mark.setOffset(new BMap.Size(0,34));
+            routePoiFun = _self.routePolicy(map,origin,point,isbus);
+            routePoiFun.setMarkersSetCallback(function(pois){
+                var i =0,len = pois.length,that = _self,icon1,icon2,icon1Obj = that.mySiteIconObj,icon2Obj ;
+                icon1 =new BMap.Icon(icon1Obj.url, new BMap.Size(icon1Obj.w*2,icon1Obj.h*2));
+                icon1.imageSize=new BMap.Size(icon1Obj.w,icon1Obj.h);
+                pois[0].marker.setIcon(icon1);
+                pois[1].marker.setOffset(new BMap.Size(0,34));
+
+                if(current<11){
+                    icon2Obj = that.levelBIconObj[current];
+                    icon2 =  new BMap.Icon(icon2Obj.url, new BMap.Size(icon2Obj.w*2,icon2Obj.h*2));
+                    icon2.imageSize=new BMap.Size(icon2Obj.w,icon2Obj.h);
+                    pois[1].marker.setIcon(icon2);
+                    //mark = addMarker(_self.levelBIconObj[current],point,map);
+                }else{
+                    icon2Obj = that.defaultBIconObj;
+                    icon2 =  new BMap.Icon(icon2Obj.url, new BMap.Size(icon2Obj.w*2,icon2Obj.h*2));
+                    icon2.imageSize=new BMap.Size(icon2Obj.w,icon2Obj.h);
+                    pois[1].marker.setIcon(icon2);
+                    //pois[1].marker.setIcon(new BMap.Icon(that.defaultBIconObj.url, new BMap.Size(that.defaultBIconObj.w,that.defaultBIconObj.h)));
+                    //mark = addMarker(_self.defaultBIconObj,point,map);
+                }
+                //mark.setOffset(new BMap.Size(0,34));
+            });
+
+
 			_self.showInfoWinSearch(map,local[current]);
 		}
 		else{
@@ -758,10 +781,20 @@ App.page('history',function(){
 				hisResetAdd(num,$(".his_it"));
 			}
         });
+        var moveSiz={};
         //console.log(mySwiper);
 
-        $('#historyLis').on(" touchend",".his_it",function(event){
-            var num,item,pageArr = [0,1,2,3,4], i,lis=$(".his_it"),len = lis.length,slides,slen;
+        $('#historyLis').on("touchstart",function(event){
+            var touch = event.touches[0];
+            moveSiz.x = touch.pageX;
+            moveSiz.y = touch.pageY;
+            console.log(touch.pageX+" "+touch.pageY);
+        }).on(" touchend",".his_it",function(event){
+            var num,item,pageArr = [0,1,2,3,4], i,lis=$(".his_it"),len = lis.length,slides,slen,touch = event.changedTouches[0];
+            if(Math.abs(moveSiz.x-touch.pageX)>5||Math.abs(moveSiz.y-touch.pageY)>5){
+                event.preventDefault();
+                return false;
+            }
             item = $(event.target);
             num =$(item).parents(".his_it").index();
 			//console.log($(item).parents(".his_it"));
