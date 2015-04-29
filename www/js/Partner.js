@@ -271,8 +271,8 @@ var cityPoint = {
 
 // 用于 partners 地图
 var partnerBd = {
-	//jsonUrl:"http://120.24.85.210/api/getPartners.php?callback=?",
-	jsonUrl:"api/getPartners.php",
+	jsonUrl:"http://120.24.85.210/api/getPartners.php?callback=?",
+	//jsonUrl:"api/getPartners.php",
 	data:[],
 	country:"china",                                  //设定我所在的国家
 	defaultIconObj:{url:'imgs/m0.png',w:30,h:24},     //设定默认商家的icon
@@ -332,10 +332,10 @@ var partnerBd = {
 		}else{
 			$.ajax({
 				url : url,
-				//dataType : 'jsonp',
+				dataType : 'jsonp',
 				timeout : 20000,
 				success : function(data){
-                    data = JSON.parse(data);
+                    //data = JSON.parse(data);
 					_self.data = data.data;
 					console.log(data);
 					_self.openMap(data.data);
