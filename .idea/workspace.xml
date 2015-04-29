@@ -1,76 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30f97152-6d3a-428e-8ffd-a8b1752bbad5" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\.sass-cache\3d20b3b38ae96002677cbdc5af31bf9e1bbde406\index-css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\.sass-cache\5613ba19393883fbc930b40992413de7f3300f4d\index-css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\.sass-cache\7c1c016adf1d51092580692f5244aa59deadd35c\index-css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\index-css2.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\index-css2.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\index-css2scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\css\index.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\default\apple-touch-icon-114x114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\default\apple-touch-icon-57x57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\history_detail_section.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\history_section2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\partner_other_section.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\popup_section.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\share_section.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\html\welcome.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\Jingle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\Partner.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\app.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\appc9.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\idangerous.swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\index.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\iscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\share.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\js\zepto.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\form.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-it1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-it2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-it3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-it4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-it5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\his-lis6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_01.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_02.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_04.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_05.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_07.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_08.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_10.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_11.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_13.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_14.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_15.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_17.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_18.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_20.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_21.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_22.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_23.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_25.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_26.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_27.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_29.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_30.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_32.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\images\his_33.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\news.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\partners.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\souve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\node\DavidPhonegap\phonegapLearn\www\pics\souvenir.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/res/icon/tizen/icon-128.png" afterPath="$PROJECT_DIR$/www/res/icon/tizen/icon-128.png" />
+    <list default="true" id="30f97152-6d3a-428e-8ffd-a8b1752bbad5" name="Default" comment="remove useless&#10;[-]many&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/index.html&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/index-css.css" afterPath="$PROJECT_DIR$/www/css/index-css.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/index-css.scss" afterPath="$PROJECT_DIR$/www/css/index-css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/html/partner_detail_section.html" afterPath="$PROJECT_DIR$/www/html/partner_detail_section.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/html/partner_section.html" afterPath="$PROJECT_DIR$/www/html/partner_section.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phonegapLearn.iws" />
@@ -95,8 +30,28 @@
       <file leaf-file-name="index-css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/index-css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.029161604">
-              <caret line="793" column="0" selection-start-line="793" selection-start-column="0" selection-end-line="794" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30012152">
+              <caret line="686" column="58" selection-start-line="686" selection-start-column="58" selection-end-line="686" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner_detail_section.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/partner_detail_section.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner_section.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/html/partner_section.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.636364">
+              <caret line="16" column="73" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -158,6 +113,8 @@
       <list>
         <option value="$PROJECT_DIR$/www/html/setting_section.html" />
         <option value="$PROJECT_DIR$/www/js/Partner.js" />
+        <option value="$PROJECT_DIR$/www/html/partner_detail_section.html" />
+        <option value="$PROJECT_DIR$/www/html/partner_section.html" />
         <option value="$PROJECT_DIR$/www/css/index-css.scss" />
       </list>
     </option>
@@ -245,7 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +322,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430290362313</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="remove useless&#10;[-]many&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/index.html&#10;">
+      <created>1430298319803</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1430298319803</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -409,7 +372,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/zhuyingyan/phonegapLearn&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="the last modified&#10;[*]www/html/setting_section.html" />
     <MESSAGE value="build bug fixed&#10;[*].idea/workspace.xml&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/Partner.js&#10;[*]icon.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="build bug fixed&#10;[*].idea/workspace.xml&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/Partner.js&#10;[*]icon.png" />
+    <MESSAGE value="remove useless&#10;[-]many&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/index.html&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless&#10;[-]many&#10;[*]www/css/index-css.scss+index-css.css&#10;[*]www/index.html&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -476,10 +440,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/partner_list_section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/partner_detail_section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/html/partner_section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.636364">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/index-css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029161604">
-          <caret line="793" column="0" selection-start-line="793" selection-start-column="0" selection-end-line="794" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30012152">
+          <caret line="686" column="58" selection-start-line="686" selection-start-column="58" selection-end-line="686" selection-end-column="58" />
           <folding />
         </state>
       </provider>
