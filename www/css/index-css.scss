@@ -26,7 +26,8 @@ body { height: 100%; background: $bg; font: 1rem/1.6em "\5b8b\4f53","Arial Narro
   color: $pColor; -webkit-text-size-adjust: none; position:relative;}
 a { text-decoration: none; color: $aColor; }
 a:hover { color: $aColor; text-decoration: none; }
-section, article, aside, header, footer, nav, dialog, figure, hgroup { display: block; -webkit-box-sizing:border-box;box-sizing:border-box;}
+section, article, aside, header, footer, nav, dialog, figure, hgroup { -webkit-box-sizing:border-box;box-sizing:border-box;}
+article, aside, header, footer, nav, dialog, figure, hgroup { display: block;}
 figure { margin: 0; }
 img{display: block;}
 html,body{height:100%;}
